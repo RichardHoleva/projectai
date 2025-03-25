@@ -1,18 +1,13 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
+
 export default function Header() {
   return (
-    <header>
-      <nav style={{ display: "flex", gap: "20px" }}>
-        <p>
-          <Link to="">Home</Link>
-        </p>
-
-        <p>
-          <Link to="first">Exp. sys: Forward Chaining</Link>
-        </p>
-        <p>
-          <Link to="second">Exp. sys: Backward Chaining</Link>
-        </p>
+    <header className="header">
+      <nav className="nav">
+        <Link className="nav-link" to="">Home</Link>
+        <Link className="nav-link" to="first">Exp. sys: Forward Chaining</Link>
+        <Link className="nav-link" to="second">Exp. sys: Backward Chaining</Link>
       </nav>
     </header>
   );

@@ -58,3 +58,27 @@ img {
   border-radius: 12px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
+
+.header {
+  padding: 10px 20px;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #000;
+  background-color: #e0e0e0;
+  padding: 5px 10px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #b0bec5;
+}

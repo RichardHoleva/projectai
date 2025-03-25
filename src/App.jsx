@@ -8,7 +8,7 @@ import Home from "./views/Home";
 
 const router = createBrowserRouter([
   {
-    path: "/aisystems/",
+    path: "/", // changed from "/projectai/" to "/"
     element: <Layout />,
     children: [
       {
@@ -26,7 +26,7 @@ const router = createBrowserRouter([
       },
     ],
   },
-]);
+], { basename: "/projectai" }); // new basename option
 
 function App() {
   return <RouterProvider router={router} />;
